@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		#main{
+				
+				transform-style: preserve-3d;
+				perspective: 4000px;
+			}
+			.dh1{
+				width: 100px;
+				background-color: black;
+				color: white;
+				text-align: left;
+				transition: all 0.2s;
+				-webkit-transition: all 0.2s;
+				position: relative;
+				left: -150px;
+			}
+			.dh2{
+				width: 100px;
+				background-color: black;
+				color: white;
+				text-align: left;
+				transition: all 0.4s;
+				-webkit-transition: all 0.4s;
+				position: relative;
+				left: -150px;
+			}
+			.dh3{
+				width: 100px;
+				background-color: black;
+				color: white;
+				text-align: left;
+				transition: all 1s;
+				-webkit-transition: all 0.6s;
+				position: relative;
+				left: -150px;
+			}
+			.dh4{
+				width: 100px;
+				background-color: black;
+				color: white;
+				text-align: left;
+				transition: all 1s;
+				-webkit-transition: all 0.7s;
+				position: relative;
+				left: -150px;
+			}
+			.dh5{
+				width: 100px;
+				background-color: black;
+				color: white;
+				text-align: left;
+				transition: all 1s;
+				-webkit-transition: all 0.8s;
+				position: relative;
+				left: -150px;
+			}
+			#open:checked~.main .dh1{
+				left: 0px;
+			}
+			#open:checked~.main .dh2{
+				left: 0px;
+			}
+			#open:checked~.main .dh3{
+				left: 0px;
+			}
+			#open:checked~.main .dh4{
+				left: 0px;
+			}
+			#open:checked~.main .dh5{
+				left: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="radio" name="choose"  id="close" value="" />
+		<input type="radio" name="choose" checked="checked" id="open" value="" />
+		<div class="header">
+					<label id="lclose" for="close"></label>
+					<label id="lopen" for="open"></label>
+				</div>
+		<div class="main">
+		<div class="dh1">首页</div>				
+		<div class="dh2">序言</div>
+		<div class="dh3">首部</div>
+		<div class="dh4">主体</div>
+		<div class="dh5">尾部</div></div>
+	</body>
+</html>
